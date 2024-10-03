@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+// Import FontAwesome and AOS
+// @import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+// @import "node_modules/aos/dist/aos.css";
+
+// Define color variables
+$accent-color: #FF6347;
+$primary-color: #007BFF;
+$secondary-color: #495057;
+$bg-color: #F8F9FA;
+$accent-color: #FF6347;
+$font-family: 'Poppins', sans-serif;
+
+// Global styles
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+// Body
+body {
+    font-family: $font-family, sans-serif;
+    background-color: $bg-color;
+    scroll-behavior: smooth;
+}
+
+// Section Headings
+h2 {
+    font-family: $font-family, sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: $primary-color;
+}
+
+// Smooth scrolling offset for fixed navbar
+html {
+    scroll-padding-top: 70px; // Height of the navbar
+}
+
+// AOS Animations
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}

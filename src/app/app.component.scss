@@ -1,0 +1,15 @@
+footer {
+    background: #f8f9fa;
+    color: #495057;
+    font-size: 0.9rem;
+  
+    a {
+      color: $primary-color;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

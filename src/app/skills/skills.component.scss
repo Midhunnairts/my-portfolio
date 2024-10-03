@@ -1,0 +1,42 @@
+#skills {
+    h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #007BFF;
+    }
+
+    .skill-card {
+        background: white;
+        padding: 30px 20px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        i {
+            color: #FF6347;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #495057;
+        }
+
+        .progress {
+            height: 20px;
+            border-radius: 10px;
+            background-color: #e9ecef;
+
+            .progress-bar {
+                line-height: 20px;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
