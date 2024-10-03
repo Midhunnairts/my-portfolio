@@ -4,7 +4,6 @@
 
 // Define color variables
 $accent-color: #FF6347;
-$primary-color: #007BFF;
 $secondary-color: #495057;
 $bg-color: #F8F9FA;
 $accent-color: #FF6347;
@@ -28,7 +27,7 @@ h2 {
     font-family: $font-family, sans-serif;
     font-weight: 700;
     margin-bottom: 30px;
-    color: $primary-color;
+    color: #007BFF;
 }
 
 // Smooth scrolling offset for fixed navbar
