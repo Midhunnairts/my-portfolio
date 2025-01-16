@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TranslationLoaderService } from '../service/translation-loader.service';
+import { locale as english } from '../shared/i18n/en';
+import { locale as french } from '../shared/i18n/fr';
 
 @Component({
   selector: 'app-contact',
-  standalone: true,
-  imports: [],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrls: ['./contact.component.css']
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
+  constructor(private _translationLoaderService: TranslationLoaderService) {
+    this._translationLoaderService.loadTranslations(english, french);
+  
+  }
+
+  ngOnInit(): void {
+   
+  }
 }

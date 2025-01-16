@@ -1,12 +1,27 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { TranslationLoaderService } from '../service/translation-loader.service';
+import { locale as english } from '../shared/i18n/en';
+import { locale as french } from '../shared/i18n/fr';
+import Typed from 'typed.js';
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
+  constructor(private _translationLoaderService: TranslationLoaderService) {
+    this._translationLoaderService.loadTranslations(english, french);
+  }
+  ngOnInit(): void {
+    var options = {
+      strings: ['','Full-Stack', 'Front-end','Angular'],
+      typeSpeed: 120,
+      backSpeed: 100,
+      loop: true,
+    };
+    
+    var typed = new Typed('.typed', options);
+    typed.reset(true)
+  }
 }

@@ -1,33 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ContactComponent } from './contact/contact.component';
-import { SkillsComponent } from './skills/skills.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { HomeComponent } from './home/home.component';
+import { TranslateService } from '@ngx-translate/core';
 
-declare var AOS: any;
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet,
-    NavbarComponent,
-    ContactComponent,
-    SkillsComponent,
-    AboutComponent,
-    ProjectsComponent,
-    HomeComponent
-  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'portfolio-site';
-  ngOnInit() {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
+  currentYear:number;
+  constructor(private _translateService: TranslateService) {
+    this._translateService.addLangs(['en']);
+    this._translateService.setDefaultLang('en');
+    this.currentYear=new Date().getFullYear();
   }
+
+  ngOnInit(): void {
+    if (!localStorage.getItem("lang")) {
+      localStorage.setItem("lang", 'en');
+    }
+    let lang:any=localStorage.getItem("lang"); 
+    this._translateService.setDefaultLang(lang);
+    this._translateService.use(lang);
+  }
+
 }
