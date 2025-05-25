@@ -49,6 +49,34 @@ export const projectsEn = [
         detail:"An angular project tailored for civil engineers, providing a clear and detailed visualization of shear force and bending moment diagrams in a beam.",
         codeSourceUrl:'https://github.com/Midhunnairts/beam-builder',
         detailIsDisplayed: false,
+    },
+    {
+        id:"realTimeEditor",
+        name: "Real-Time Editor",
+        technologies: 'Angular 18, React.js, Node.js, Express.js, Socket.io, Single-spa microfront end architecture, quill, HTML, CSS, TS',
+        images: [
+            {
+                title:'Real-Time Editor',
+                src:   "assets/images/real-time.png",
+            },
+            // {
+            //     title:'Campaign detail',
+            //     src :"assets/images/compagne-detail.jpg",
+            // },
+            // {
+            //     title:"Email performance",
+            //     src: "assets/images/email-detail.jpg",
+            // },
+            // {
+            //     title:"Performance of an asset",
+            //     src: "assets/images/asset-detail.jpg" 
+            // },
+            
+        ],
+        url:'#portfolio',
+        detail:"Designed a micro-frontend document editor, integrating React for login and Angular for document handling. Implemented real-time multi-user collaboration using Socket.IO and Quill Editor with Delta format. Integrated MongoDB for scalable document storage, permission management, and auto-save functionality, increasing efficiency by 50%",
+        codeSourceUrl:'https://github.com/Midhunnairts/Collab-Root-Config',
+        detailIsDisplayed: false,
     }
 ];
 
