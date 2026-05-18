@@ -74,9 +74,12 @@ export const locale = {
         },
         'skills': {
             'title': 'Compétences',
-            'technologies': 'Téchnologies',
-            'tools': 'Outils',
-            'methodologies': 'Méthodologies'
+            'languages': 'Langages de Programmation',
+            'frontend': 'Technologies Frontend',
+            'backend': 'Technologies Backend',
+            'databases': 'Bases de Données',
+            'devopsTools': 'DevOps & Outils',
+            'other': 'Autres Expertises'
         },
     }
 }

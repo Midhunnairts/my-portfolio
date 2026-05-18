@@ -9,48 +9,38 @@ import { locale as french } from '../shared/i18n/fr';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills: any = {
-    technologies: [
-      {
-        name: "Angular 14,16,18",
-        percent: 85,
-        remark: 'excellent'
-      },
-      {
-        name: "Micro frontend architecture - Single-spa",
-        percent: 85,
-        remark: 'excellent'
-      },
-      {
-        name: "JavaScript, TypeScript",
-        percent: 80,
-        remark: 'very-good'
-      },
-      {
-        name: "HTML5, CSS3, SASS/SCSS",
-        percent: 95,
-        remark: 'excellent'
-      },
-      {
-        name: "Node.js, Express.js, MongoDB",
-        percent: 85,
-        remark: 'good'
-      }],
-    tools: [
-      { name: "Git, Bitbucket", percent: 90, remark: 'excellent' },
-      { name: "Vs Code", percent: 90, remark: 'excellent' },
-      { name: "Linux, Windows", percent: 80, remark: 'very-good' },
-      { name: "NoSql", percent: 80, remark: 'good' },
-      { name: "NPM", percent: 85, remark: 'very-good' },
-    ],
-    // methodologies: [
-    //   { name: "Scrum", percent: 70, remark: 'very-good' },
-    //   { name: "Uml", percent: 90, remark: 'excellent' },
-    //   { name: "Disign Thinking", percent: 70, remark: 'good' },
-    //   { name: "TDD", percent: 90, remark: 'excellent' },
-    //   { name: "DevOps", percent: 50, remark: 'average' }
-    // ]
-  };
+  skills: any[] = [
+    {
+      titleKey: 'skills.languages',
+      icon: 'bx-code',
+      items: ['JavaScript', 'TypeScript', 'Python']
+    },
+    {
+      titleKey: 'skills.frontend',
+      icon: 'bx-window-alt',
+      items: ['Angular (14,16,18)', 'Single-SPA', 'HTML5', 'CSS3', 'SCSS/SASS']
+    },
+    {
+      titleKey: 'skills.backend',
+      icon: 'bx-server',
+      items: ['Node.js', 'Express.js', 'RESTful APIs']
+    },
+    {
+      titleKey: 'skills.databases',
+      icon: 'bx-data',
+      items: ['MongoDB']
+    },
+    {
+      titleKey: 'skills.devopsTools',
+      icon: 'bx-terminal',
+      items: ['Git', 'Bitbucket', 'NPM', 'Docker (basic)', 'Kubernetes (basic)', 'CI/CD (basic)', 'Postman']
+    },
+    {
+      titleKey: 'skills.other',
+      icon: 'bx-brain',
+      items: ['Micro-frontend architecture', 'Web performance optimization', 'Security practices', 'Agile methodology']
+    }
+  ];
 
   constructor(private _translationLoaderService: TranslationLoaderService) {
     this._translationLoaderService.loadTranslations(english, french);
@@ -60,7 +50,3 @@ export class SkillsComponent implements OnInit {
   }
 
 }
-
-
-
-

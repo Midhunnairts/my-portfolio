@@ -7,18 +7,21 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-card:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  border-color: rgba(2, 132, 199, 0.2);
 }
 
 .category-title {
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   color: var(--primary-color);
   display: flex;
   align-items: center;
@@ -28,15 +31,15 @@
 
 .icon-accent {
   color: var(--accent-color);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
 }
 
-/* Beautiful responsive Grid of pill badges */
+/* Beautiful responsive flex container for tag badges */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 12px;
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .skill-pill-item {
@@ -45,7 +48,7 @@
   background-color: var(--accent-light);
   border: 1.5px solid rgba(2, 132, 199, 0.12);
   border-radius: var(--radius-sm);
-  padding: 10px 16px;
+  padding: 8px 14px;
   cursor: default;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -53,8 +56,8 @@
 .skill-pill-item:hover {
   background: var(--accent-gradient);
   border-color: transparent;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
 }
 
 .skill-pill-item:hover .skill-item-text {
@@ -68,7 +71,7 @@
 
 .skill-item-text {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--primary-light);
   transition: color 0.2s ease;
@@ -76,12 +79,12 @@
 
 .skill-check-icon {
   color: var(--accent-color);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   transition: all 0.5s ease;
 }
 
 @media (max-width: 576px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .skill-pill-item {
+    width: 100%;
   }
 }

@@ -3,34 +3,18 @@
         <h2><strong>{{'skills.title' | translate}}</strong></h2>
         <span class="bar-title mb-5"></span>
         
-        <div class="row mt-2">
-            <!-- Left Side: Technologies -->
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+            <!-- Dynamically loop over the 6 categories from your resume -->
+            <div class="col-lg-4 col-md-6 mb-4" *ngFor="let category of skills; let i = index" data-aos="fade-up" [attr.data-aos-delay]="(i + 1) * 100">
                 <div class="skills-card p-4 h-100">
                     <h5 class="category-title mb-4">
-                        <i class='bx bx-code-alt mr-2 icon-accent'></i>
-                        <strong>{{'skills.technologies' | translate}}</strong>
+                        <i class='bx mr-2 icon-accent' [ngClass]="category.icon"></i>
+                        <strong>{{category.titleKey | translate}}</strong>
                     </h5>
                     <div class="skills-grid">
-                        <div class="skill-pill-item" *ngFor="let technologie of skills.technologies;">
+                        <div class="skill-pill-item" *ngFor="let item of category.items">
                             <i class="bx bx-check-double skill-check-icon mr-2"></i>
-                            <span class="skill-item-text">{{technologie.name}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Right Side: Tools -->
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="skills-card p-4 h-100">
-                    <h5 class="category-title mb-4">
-                        <i class='bx bx-wrench mr-2 icon-accent'></i>
-                        <strong>{{'skills.tools' | translate}}</strong>
-                    </h5>
-                    <div class="skills-grid">
-                        <div class="skill-pill-item" *ngFor="let tool of skills.tools;">
-                            <i class="bx bx-cog skill-check-icon mr-2"></i>
-                            <span class="skill-item-text">{{tool.name}}</span>
+                            <span class="skill-item-text">{{item}}</span>
                         </div>
                     </div>
                 </div>
