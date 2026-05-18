@@ -77,12 +77,23 @@
   margin-bottom: 8px;
 }
 
-.project-desc {
+.project-desc-expanded {
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   color: var(--text-gray);
   line-height: 1.6;
-  margin-bottom: 20px;
+  animation: slideDown 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Technology badges styled like modern micro-chips */

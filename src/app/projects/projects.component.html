@@ -30,8 +30,9 @@
                             </span>
                         </div>
                         
-                        <!-- Short Description -->
-                        <p class="project-desc flex-grow-1">{{project.detail}}</p>
+                        <!-- Expanded Description -->
+                        <div *ngIf="project.detailIsDisplayed" class="project-desc-expanded mt-2 mb-3" [innerHTML]="project.detail">
+                        </div>
                         
                         <!-- Actions -->
                         <div class="project-actions mt-auto pt-3 border-top d-flex justify-content-between align-items-center">
