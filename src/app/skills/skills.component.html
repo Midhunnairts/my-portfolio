@@ -5,42 +5,32 @@
         
         <div class="row mt-2">
             <!-- Left Side: Technologies -->
-            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-                <div class="skills-card p-4">
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skills-card p-4 h-100">
                     <h5 class="category-title mb-4">
                         <i class='bx bx-code-alt mr-2 icon-accent'></i>
                         <strong>{{'skills.technologies' | translate}}</strong>
                     </h5>
-                    <div id="skillgraph">
-                        <div class="skill-row mb-4" *ngFor="let technologie of skills.technologies;">
-                            <div class="label d-flex justify-content-between align-items-center mb-2">
-                                <span class="skillLabel">{{technologie.name}}</span>
-                                <span class="skill-percent">{{technologie.percent}}%</span>
-                            </div>
-                            <div class="skillData-Wrapper">
-                                <div [style.width.%]="technologie.percent" class="skillData bg-rust"></div>
-                            </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill-item" *ngFor="let technologie of skills.technologies;">
+                            <i class="bx bx-check-double skill-check-icon mr-2"></i>
+                            <span class="skill-item-text">{{technologie.name}}</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Right Side: Tools -->
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="skills-card p-4">
+            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="skills-card p-4 h-100">
                     <h5 class="category-title mb-4">
                         <i class='bx bx-wrench mr-2 icon-accent'></i>
                         <strong>{{'skills.tools' | translate}}</strong>
                     </h5>
-                    <div id="skillgraph">
-                        <div class="skill-row mb-4" *ngFor="let tool of skills.tools;">
-                            <div class="label d-flex justify-content-between align-items-center mb-2">
-                                <span class="skillLabel">{{tool.name}}</span>
-                                <span class="skill-percent">{{tool.percent}}%</span>
-                            </div>
-                            <div class="skillData-Wrapper">
-                                <div [style.width.%]="tool.percent" class="skillData bg-rust"></div>
-                            </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill-item" *ngFor="let tool of skills.tools;">
+                            <i class="bx bx-cog skill-check-icon mr-2"></i>
+                            <span class="skill-item-text">{{tool.name}}</span>
                         </div>
                     </div>
                 </div>

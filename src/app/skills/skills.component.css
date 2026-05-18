@@ -31,35 +31,57 @@
   font-size: 1.5rem;
 }
 
-.skillLabel {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 0.95rem;
-  color: var(--primary-light);
+/* Beautiful responsive Grid of pill badges */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
 }
 
-.skill-percent {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--accent-color);
+.skill-pill-item {
+  display: flex;
+  align-items: center;
+  background-color: var(--accent-light);
+  border: 1.5px solid rgba(2, 132, 199, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  cursor: default;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Beautiful dynamic progress bar tracking */
-.skillData-Wrapper {
-  width: 100%;
-  height: 10px;
-  background-color: #f1f5f9;
-  border-radius: 10px;
-  overflow: hidden;
-  display: block;
-}
-
-.skillData {
-  height: 100%;
-  border-radius: 10px;
+.skill-pill-item:hover {
   background: var(--accent-gradient);
-  display: block;
-  width: 0; /* Base state */
-  transition: width 1.5s cubic-bezier(0.1, 0.8, 0.3, 1); /* Beautiful reveal effect */
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(2, 132, 199, 0.25);
+}
+
+.skill-pill-item:hover .skill-item-text {
+  color: #ffffff;
+}
+
+.skill-pill-item:hover .skill-check-icon {
+  color: #ffffff;
+  transform: rotate(360deg);
+}
+
+.skill-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary-light);
+  transition: color 0.2s ease;
+}
+
+.skill-check-icon {
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 576px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
