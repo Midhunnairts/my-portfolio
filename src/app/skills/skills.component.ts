@@ -33,7 +33,7 @@ export class SkillsComponent implements OnInit {
       },
       {
         name: "Node.js, Express.js, MongoDB",
-        percent: 70,
+        percent: 85,
         remark: 'good'
       }],
     tools: [

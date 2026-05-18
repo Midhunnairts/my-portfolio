@@ -4,15 +4,15 @@ export const locale = {
         'about': {
             'title': 'A propos',
             'jobTitle': 'Développeur MEAN Stack / Ingénieur Logiciel',
-            'introductionOfMe': "Développeur Full Stack avec environ 3 ans d'expérience dans la création d'applications web évolutives et sécurisées à l'aide de MongoDB, Express.js, Angular et Node.js (MEAN Stack). Expertise avérée dans les architectures micro-frontend, le développement d'API et l'optimisation de systèmes, conduisant à des déploiements 40% plus rapides et une efficacité de développement améliorée de 30%. Reconnu pour ses solutions innovantes et sa forte résolution de problèmes techniques. Travaille actuellement avec Cisco sur des outils d'automatisation et des systèmes d'orchestration de réseau.",
-            'passionateAboutDevelopment':' Passionné par le développement',
+            'introductionOfMe': "Développeur Full Stack avec environ 4 ans d'expérience dans la création d'applications web évolutives et sécurisées à l'aide de MongoDB, Express.js, Angular et Node.js (MEAN Stack). Expertise avérée dans les architectures micro-frontend, le développement d'API et l'optimisation de systèmes, conduisant à des déploiements 40% plus rapides et une efficacité de développement améliorée de 30%. Reconnu pour ses solutions innovantes et sa forte résolution de problèmes techniques. Travaille actuellement avec Cisco sur des outils d'automatisation et des systèmes d'orchestration de réseau.",
+            'passionateAboutDevelopment': ' Passionné par le développement',
             'mobility': 'Bangalore, Inde',
             'years': 'ans',
             'graduation': "Baccalauréat en ingénierie en sciences de l'information (CGPA: 7.91)",
             'myResearch': 'Recherche de contrat CDI',
             'researchDescription': "Je recherche une entreprise innovante et centrée sur l'utilisateur pour répondre au mieux aux besoins du client, de son idée à la livraison finale de son projet, ou participer à l'amélioration d'un projet existant.",
-            'and':'et',
-            'followMeOn':'Suivez-moi sur',
+            'and': 'et',
+            'followMeOn': 'Suivez-moi sur',
         },
         'contact': {
             'contactMe': 'Contactez moi',
@@ -46,12 +46,12 @@ export const locale = {
             'bachlorDegree': "Licence 3 Informatique",
             'bachlorDegreeDesc': "Licence en informatiques",
             'university': 'Université de Lille, FR',
-            'mission':'Mission',
-            'technologies':'Téchnologies',
-            'detail':'Détail',
-            'tripsCountries':'Belgique, Espagne, Pays-Bas, Suisse',
-            'boardGamesPlayed':'Jeu de dames et de dominos, Among US, Ludo, ..etc',
-            'years':'ans'
+            'mission': 'Mission',
+            'technologies': 'Téchnologies',
+            'detail': 'Détail',
+            'tripsCountries': 'Belgique, Espagne, Pays-Bas, Suisse',
+            'boardGamesPlayed': 'Jeu de dames et de dominos, Among US, Ludo, ..etc',
+            'years': 'ans'
         },
         'header': {
             'home': 'Accueil',
@@ -59,24 +59,24 @@ export const locale = {
             'skills': 'Compétences',
             'references': 'Recommandations',
             'contactMe': 'Me Contacter',
-            
+
         },
         'home': {
             'iAmDeveloper': 'Je suis développeur',
         },
         'projects': {
             'title': 'Projets',
-            'projectDetail':'Détail projet',
-            'sourceCode':'Code source',
+            'projectDetail': 'Détail projet',
+            'sourceCode': 'Code source',
         },
         'references': {
             'title': 'Recommandations',
         },
         'skills': {
             'title': 'Compétences',
-            'technologies':'Téchnologies',
-            'tools':'Outils',
-            'methodologies':'Méthodologies'
+            'technologies': 'Téchnologies',
+            'tools': 'Outils',
+            'methodologies': 'Méthodologies'
         },
     }
 }

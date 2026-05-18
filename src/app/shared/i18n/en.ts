@@ -4,7 +4,7 @@ export const locale = {
         'about': {
             'title': 'About',
             'jobTitle': 'MEAN Stack Developer / Software Engineer',
-            'introductionOfMe': 'Full Stack Developer with around 3 years of experience in building scalable and secure web applications using MongoDB, Express.js, Angular, and Node.js (MEAN Stack). Proven expertise in micro-frontend architectures, API development, and system optimization, leading to 40% faster deployments and 30% improved development efficiency. Recognized for innovative solutions and strong technical problem-solving. Currently working with Cisco on automation workflows and network orchestration systems.',
+            'introductionOfMe': 'Full Stack Developer with around 4 years of experience in building scalable and secure web applications using MongoDB, Express.js, Angular, and Node.js (MEAN Stack). Proven expertise in micro-frontend architectures, API development, and system optimization, leading to 40% faster deployments and 30% improved development efficiency. Recognized for innovative solutions and strong technical problem-solving. Currently working with Cisco on automation workflows and network orchestration systems.',
             'passionateAboutDevelopment': 'Passionate about development',
             'mobility': 'Bangalore',
             'years': 'Years',
@@ -46,12 +46,12 @@ export const locale = {
             'bachlorDegree': "Bachelor's degree",
             'bachlorDegreeDesc': "Information Science and Engineering",
             'university': 'University of Lille, FR',
-            'mission':'Mission',
-            'technologies':'Technologies',
-            'detail':'Detail',
-            'tripsCountries':'Ooty, Goa, Munnar, Dandeli',
-            'boardGamesPlayed':'Checkers and dominoes game, Among US, Ludo, ..etc',
-            'years':'years'
+            'mission': 'Mission',
+            'technologies': 'Technologies',
+            'detail': 'Detail',
+            'tripsCountries': 'Ooty, Goa, Munnar, Dandeli',
+            'boardGamesPlayed': 'Checkers and dominoes game, Among US, Ludo, ..etc',
+            'years': 'years'
         },
         'header': {
             'home': 'Home',
@@ -65,8 +65,8 @@ export const locale = {
         },
         'projects': {
             'title': 'Portfolio',
-            'projectDetail':'Project detail',
-            'sourceCode':'Source code',
+            'projectDetail': 'Project detail',
+            'sourceCode': 'Source code',
         },
         'references': {
             'title': 'References',
