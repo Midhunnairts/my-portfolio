@@ -3,12 +3,12 @@ export const locale = {
     data: {
         'about': {
             'title': 'A propos',
-            'jobTitle': "Développeur d'applications web et mobiles",
-            'introductionOfMe': "Intéressé par les nouvelles technologies et méthodes de travail. J'aime proposer des idées qui permettent d'améliorer les processus d'affaires.",
+            'jobTitle': 'Développeur MEAN Stack / Ingénieur Logiciel',
+            'introductionOfMe': "Développeur Full Stack avec environ 3 ans d'expérience dans la création d'applications web évolutives et sécurisées à l'aide de MongoDB, Express.js, Angular et Node.js (MEAN Stack). Expertise avérée dans les architectures micro-frontend, le développement d'API et l'optimisation de systèmes, conduisant à des déploiements 40% plus rapides et une efficacité de développement améliorée de 30%. Reconnu pour ses solutions innovantes et sa forte résolution de problèmes techniques. Travaille actuellement avec Cisco sur des outils d'automatisation et des systèmes d'orchestration de réseau.",
             'passionateAboutDevelopment':' Passionné par le développement',
-            'mobility': 'Mobile dans toute la France',
+            'mobility': 'Bangalore, Inde',
             'years': 'ans',
-            'graduation': "Master 2 Informatique",
+            'graduation': "Baccalauréat en ingénierie en sciences de l'information (CGPA: 7.91)",
             'myResearch': 'Recherche de contrat CDI',
             'researchDescription': "Je recherche une entreprise innovante et centrée sur l'utilisateur pour répondre au mieux aux besoins du client, de son idée à la livraison finale de son projet, ou participer à l'amélioration d'un projet existant.",
             'and':'et',

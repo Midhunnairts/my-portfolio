@@ -1,21 +1,33 @@
 export const experiencesEn = [
     {
-        title: "Software Engineer",
-        company: 'Signdesk Pvt Ltd',
-        period: "2022 - Present",
-        technologies: 'Angular(14, 16, 18), Single Spa, Node.Js, Express.Js, HTML, CSS, JavaScript, TypeScript',
+        title: "MEAN Stack Developer (Contract – Cisco via TEKsystems)",
+        company: "Cisco Systems",
+        period: "2025 – Present",
+        technologies: "Node.js, Python, JavaScript, Angular, Express.js, Cisco NSO, Docker, Kubernetes",
         missions: [
-            "Created a micro frontend architecture, converting a monolithic project into a more optimized and scalable micro frontend application using the Single-SPA framework, improving modularity and deployment flexibility.",
-            "Developed an SDK for reusable, customizable components such as tooltips, loaders, image editors, custom pipes, and directives for Bootstrap dropdowns. This SDK was hosted and managed in Bitbucket, improving development speed across multiple projects.",
-            "Led parallel development on multiple projects, ensuring timely delivery and effective management of cross-project priorities.",
-            "Suggested and implemented CSS code optimization strategies, significantly improving code maintainability and performance.",
-
-            "Utilized packages such as Wavesurfer.js, Konva.js, and Gridster.js to implement rich, interactive features, enhancing the user experience across different projects.",
-            "Developed APIs for PDF file conversion and conducted in-depth research on Google Sheets APIs for potential integration, adding data handling and export functionalities.",
-            "Acquired in-depth knowledge of SVG and Canvas, leveraging them for advanced graphical manipulations and rendering in various projects.",
-            "Implemented frontend and backend security for web applications using Angular and Node.js, ensuring robust protection against common security threats.",
+            "Developed internal automation tools and utilities using Node.js, Python, and JavaScript, supporting Cisco’s network orchestration and infrastructure workflows.",
+            "Built reusable JavaScript libraries and packages adopted across internal platforms, improving code reuse and reducing development effort.",
+            "Designed and developed a secure file management application using Angular, Node.js, and Express.js, enabling video streaming and advanced document preview capabilities for enterprise use.",
+            "Implemented security best practices including rate limiting, data encryption, and custom middleware, ensuring secure handling of sensitive file operations.",
+            "Automated network provisioning workflows by developing and optimizing Cisco NSO service models, improving provisioning efficiency and system reliability.",
+            "Managed and maintained Docker and Kubernetes-based lab environments, enabling containerized testing, deployment simulations, and scalable infrastructure validation.",
+            "Built automation scripts, reducing manual operational effort and improving team productivity."
         ],
-        detailIsDisplayed: false,
+        detailIsDisplayed: false
+    },
+    {
+        title: "Software Engineer",
+        company: "Signdesk Pvt. Ltd.",
+        period: "2022 – 2025",
+        technologies: "Angular(14, 16, 18), Single-SPA, Webpack Module Federation, Node.js, Express.js, MongoDB, Git, Bitbucket, Wavesurfer.js, Konva.js, Gridster.js",
+        missions: [
+            "Spearheaded the migration from a monolithic architecture to a micro-frontend architecture using Single-SPA, Webpack Module Federation, and Lazy Loading, reducing deployment times by 40% and enabling independent module updates.",
+            "Developed and maintained a Bitbucket-hosted SDK with modular, reusable UI components (tooltips, loaders), reducing redundant UI development efforts by 30% and enhancing code reusability.",
+            "Designed and optimized interactive dashboards leveraging Wavesurfer.js for audio visualization, Konva.js for vector graphics rendering, and Gridster.js for dynamic grid layouts, increasing user engagement by 20%.",
+            "Implemented OWASP-compliant security best practices, including JWT authentication, CSRF/XSS protection, and secure API endpoints, reducing reported security vulnerabilities by 60%.",
+            "Code Optimization: Implemented modular CSS architecture, reducing redundant code by 25% and improving maintainability.",
+            "Developed backend APIs for PDF conversion and Google Sheets integration using Node.js and Express.js, streamlining business workflows."
+        ],
+        detailIsDisplayed: false
     }
 ];
-

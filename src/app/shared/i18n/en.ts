@@ -3,12 +3,12 @@ export const locale = {
     data: {
         'about': {
             'title': 'About',
-            'jobTitle': 'Software Engineer',
-            'introductionOfMe': 'Dedicated and skilled Front-End Angular Web Developer with over two years of experience crafting responsive and user-friendly web applications. Proficient in Angular and expert in modern web development technologies, consistently delivering high-quality solutions tailored to each product\'s unique requirements.',
+            'jobTitle': 'MEAN Stack Developer / Software Engineer',
+            'introductionOfMe': 'Full Stack Developer with around 3 years of experience in building scalable and secure web applications using MongoDB, Express.js, Angular, and Node.js (MEAN Stack). Proven expertise in micro-frontend architectures, API development, and system optimization, leading to 40% faster deployments and 30% improved development efficiency. Recognized for innovative solutions and strong technical problem-solving. Currently working with Cisco on automation workflows and network orchestration systems.',
             'passionateAboutDevelopment': 'Passionate about development',
             'mobility': 'Bangalore',
             'years': 'Years',
-            'graduation': "Bachelore's Degree in Information Science and Engineering",
+            'graduation': "Bachelor of Engineering in Information Science (CGPA: 7.91)",
             'myResearch': 'CDI contract search',
             'researchDescription': 'I am looking for an innovative and user-centric company to best meet the needs customer, from his idea to the final delivery of his project, or participate in the improvement of a project existing.',
             'and': 'and',
