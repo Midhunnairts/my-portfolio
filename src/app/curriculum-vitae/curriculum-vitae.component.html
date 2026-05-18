@@ -30,12 +30,14 @@
                                 class="btn btn-primary">
                                 <span *ngIf="!experience.detailIsDisplayed">+</span><span *ngIf="experience.detailIsDisplayed">-</span> {{'education.detail' | translate}}</button>
                         </div>
-                        <p *ngIf="experience.detailIsDisplayed">
-                            <span *ngFor="let mission of experience.missions;let index = index">
-                                <strong>{{'education.mission' | translate}} {{index+1}}: </strong>{{mission}} <br>
-                            </span>
-                            <strong>{{'education.technologies' | translate}}:</strong> {{experience.technologies}}
-                        </p>
+                        <div *ngIf="experience.detailIsDisplayed" class="timeline-details">
+                            <div *ngFor="let mission of experience.missions;let index = index" class="mission-item">
+                                <strong>{{'education.mission' | translate}} {{index+1}}: </strong>{{mission}}
+                            </div>
+                            <div class="mt-3">
+                                <strong>{{'education.technologies' | translate}}:</strong> {{experience.technologies}}
+                            </div>
+                        </div>
                     </li>
 
                 </ul>
