@@ -1,5 +1,20 @@
 export const projectsEn = [
     {
+        id: "eventManager",
+        name: "Event Manager",
+        technologies: "Angular, Node.js, MongoDB, Go, Gin, HTML5, CSS3",
+        images: [
+            {
+                title: "Event Manager",
+                src: "assets/images/image2.png"
+            }
+        ],
+        url: "#portfolio",
+        detail: "Developed a full-stack Event Management platform with a responsive Angular frontend to facilitate seamless event creation, browsing, and ticket checkout. Architected a robust backend with Node.js and MongoDB, subsequently migrating the services to a high-performance Go (Gin) environment to optimize API performance and scalability.",
+        codeSourceUrl: "https://github.com/Midhunnairts/EventManagerFrontend",
+        detailIsDisplayed: false
+    },
+    {
         id: "realTimeEditor",
         name: "Real-Time Collaborative Document Editor",
         technologies: "Angular, React.js, Node.js, Express.js, Socket.io, Single-SPA, Quill Editor, MongoDB, HTML5, CSS3",
@@ -36,12 +51,12 @@ export const projectsEn = [
         images: [
             {
                 title: "T-Shirt Designer Dashboard",
-                src: "assets/images/trainers.png"
+                src: "assets/images/image.png"
             }
         ],
         url: "#portfolio",
         detail: "Developed a real-time T-shirt customization app using Angular and Fabric.js, enabling synchronized front/back design editing with dynamic canvas interactions. Optimized performance using Angular Signals, ensuring smooth state updates and responsive UI during complex design operations.",
-        codeSourceUrl: "https://github.com/Midhunnairts/Tshirt-designer",
+        codeSourceUrl: "https://github.com/Midhunnairts/TshirtDesignerFrontend",
         detailIsDisplayed: false
     },
     {
@@ -51,12 +66,12 @@ export const projectsEn = [
         images: [
             {
                 title: "Resume Builder Canvas Workspace",
-                src: "assets/images/portfolio.PNG"
+                src: "assets/images/image1.png"
             }
         ],
         url: "#portfolio",
         detail: "Built a dynamic resume builder using Angular and Signals with a drag-and-drop interface powered by Angular CDK for flexible layout customization. Implemented high-fidelity PDF export using html2canvas and jsPDF, generating production-ready resumes with real-time preview.",
-        codeSourceUrl: "https://github.com/Midhunnairts/resume-builder",
+        codeSourceUrl: "https://github.com/Midhunnairts/ResumeBuilder-",
         detailIsDisplayed: false
     },
     {

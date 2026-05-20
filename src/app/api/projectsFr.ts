@@ -1,5 +1,20 @@
 export const projectsFr = [
     {
+        id: "eventManager",
+        name: "Gestionnaire d'événements",
+        technologies: "Angular, Node.js, MongoDB, Go, Gin, HTML5, CSS3",
+        images: [
+            {
+                title: "Gestionnaire d'événements",
+                src: "assets/images/image2.png"
+            }
+        ],
+        url: "#portfolio",
+        detail: "Développement d'une plateforme de gestion d'événements full-stack avec un frontend Angular réactif pour faciliter la création, la navigation et le paiement de billets. Architecture d'un backend robuste avec Node.js et MongoDB, puis migration des services vers un environnement Go (Gin) haute performance pour optimiser les performances et l'évolutivité de l'API.",
+        codeSourceUrl: "https://github.com/Midhunnairts/EventManagerFrontend",
+        detailIsDisplayed: false
+    },
+    {
         id: "realTimeEditor",
         name: "Éditeur de documents collaboratifs en temps réel",
         technologies: "Angular, React.js, Node.js, Express.js, Socket.io, Single-SPA, Quill Editor, MongoDB, HTML5, CSS3",
@@ -36,12 +51,12 @@ export const projectsFr = [
         images: [
             {
                 title: "Tableau de bord du concepteur de T-shirts",
-                src: "assets/images/trainers.png"
+                src: "assets/images/image.png"
             }
         ],
         url: "#portfolio",
         detail: "Développement d'une application de personnalisation de T-shirts en temps réel à l'aide d'Angular et de Fabric.js, permettant l'édition de designs synchronisés recto/verso avec des interactions de canevas dynamiques. Performances optimisées à l'aide d'Angular Signals, garantissant des mises à jour d'état fluides et une interface utilisateur réactive lors d'opérations de conception complexes.",
-        codeSourceUrl: "https://github.com/Midhunnairts/Tshirt-designer",
+        codeSourceUrl: "https://github.com/Midhunnairts/TshirtDesignerFrontend",
         detailIsDisplayed: false
     },
     {
@@ -51,12 +66,12 @@ export const projectsFr = [
         images: [
             {
                 title: "Espace de travail glisser-déposer du générateur de CV",
-                src: "assets/images/portfolio.PNG"
+                src: "assets/images/image1.png"
             }
         ],
         url: "#portfolio",
         detail: "Construction d'un générateur de CV dynamique à l'aide d'Angular et de Signals avec une interface glisser-déposer alimentée par Angular CDK pour une personnalisation flexible de la mise en page. Mise en œuvre d'une exportation PDF haute fidélité à l'aide de html2canvas et jsPDF, générant des CV prêts pour la production avec prévisualisation en temps réel.",
-        codeSourceUrl: "https://github.com/Midhunnairts/resume-builder",
+        codeSourceUrl: "https://github.com/Midhunnairts/ResumeBuilder-",
         detailIsDisplayed: false
     },
     {
