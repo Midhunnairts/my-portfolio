@@ -40,30 +40,54 @@
             
             <!-- Right Form Panel -->
             <div class="col-lg-8 col-md-7 form-panel p-5">
-                <form class="contact-form">
+                <form class="contact-form" [formGroup]="contactForm" (submit)="sendEmail($event)">
+                    
+                    <!-- Alert Messages -->
+                    <div *ngIf="successMessage" class="alert alert-success" role="alert">
+                        {{ successMessage }}
+                    </div>
+                    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+                        {{ errorMessage }}
+                    </div>
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="identite">{{'contact.identify' | translate}}</label>
-                            <input type="text" class="form-control" id="identite" placeholder="{{'contact.enterIdentify' | translate}}" name="fname">
+                            <input type="text" class="form-control" id="identite" placeholder="{{'contact.enterIdentify' | translate}}" name="identite" formControlName="identite">
+                            <div *ngIf="contactForm.get('identite')?.touched && contactForm.get('identite')?.invalid" class="text-danger small mt-1">
+                                Name is required.
+                            </div>
                         </div>
                         <div class="form-group col-md-6 mt-3 mt-md-0">
                             <label for="email">{{'contact.email' | translate}}</label>
-                            <input type="email" class="form-control" id="email" placeholder="{{'contact.enterEmail' | translate}}" name="email">
+                            <input type="email" class="form-control" id="email" placeholder="{{'contact.enterEmail' | translate}}" name="email" formControlName="email">
+                            <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="text-danger small mt-1">
+                                Valid email is required.
+                            </div>
                         </div>
                     </div>
                     
                     <div class="form-group mt-4">
                         <label for="object">{{'contact.object' | translate}}</label>
-                        <input type="text" class="form-control" id="object" placeholder="{{'contact.enterObject' | translate}}" name="object">
+                        <input type="text" class="form-control" id="object" placeholder="{{'contact.enterObject' | translate}}" name="object" formControlName="object">
+                        <div *ngIf="contactForm.get('object')?.touched && contactForm.get('object')?.invalid" class="text-danger small mt-1">
+                            Subject is required.
+                        </div>
                     </div>
                     
                     <div class="form-group mt-4">
                         <label for="comment">{{'contact.message' | translate}}</label>
-                        <textarea class="form-control" rows="5" id="comment" placeholder="Write your message here..." name="comment"></textarea>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Write your message here..." name="comment" formControlName="comment"></textarea>
+                        <div *ngIf="contactForm.get('comment')?.touched && contactForm.get('comment')?.invalid" class="text-danger small mt-1">
+                            Message is required.
+                        </div>
                     </div>
                     
                     <div class="text-right mt-4">
-                        <button type="submit" class="btn btn-primary px-5">{{'contact.send' | translate}}</button>
+                        <button type="submit" class="btn btn-primary px-5" [disabled]="isSending">
+                            <span *ngIf="isSending" class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>
+                            {{'contact.send' | translate}}
+                        </button>
                     </div>
                 </form>
             </div>
